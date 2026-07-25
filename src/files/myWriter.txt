@@ -1,2 +1,2 @@
 These are what i wrote using the FileWriter class with write() method!
-I appended this line using two-argument constructor!
+I appended this line using the write() method!

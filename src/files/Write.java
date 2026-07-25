@@ -25,7 +25,7 @@ public class Write {
         The writer is now in "append mode"
         */
         try (FileWriter myWriter=new FileWriter("src\\files\\myWriter.txt", true)) {
-            myWriter.write("I appended this line using two-argument constructor!");
+            myWriter.write("I appended this line using the write() method!");
             System.out.println("Successfully appended to the file.");
         } catch (IOException e) {
             System.out.println("An error occurred.");
