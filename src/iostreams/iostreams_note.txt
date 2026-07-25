@@ -1,0 +1,9 @@
+- FileReader, FileWriter are for working with text files.
+But BufferedReader and BufferedWriter works better for large text files.
+They make reading/writing faster by using a memory buffer.
+These four classes are "character streams".
+
+- Scanner is best for simple texts; split texts into lines, words,...
+
+- FileInputStream and FileOutputStream work with raw binary date (e.g: images, audio, pdf files);
+they are "byte streams".

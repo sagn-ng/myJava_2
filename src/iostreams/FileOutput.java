@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 public class FileOutput {
     public static void main(String[] args) {
-        String s="hello world";
+        String s="hello world!\nMy name is Sang.";
         //try-with-resources: stream will be closed automatically
         try (FileOutputStream output=new FileOutputStream("src\\iostreams\\myOutput.txt")){
             output.write(s.getBytes());
