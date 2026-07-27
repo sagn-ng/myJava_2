@@ -1,0 +1,17 @@
+Java Collections Framework provides a set of interfaces (like List, Set, Map) and a set of classes
+(like ArrayList, HashSet, TreeMap,...);
+All of these are part of the "java.util" package;
+
+1. List: ordered collections that allows duplicates
+- ArrayList: resizable array that maintains ordered
+- LinkedList: list with fast insert and remove operations
+
+2. Set: collection of unique elements
+- HashSet: unordered collection of unique elements
+- TreeSet: sorted set of unique elements (natural order)
+- LinkedHashSet: maintains the order in which elements are inserted
+
+3. Map: stores key-value pairs with unique keys
+- HashMap: no specific order
+- TreeMap: sorted map with natural order of keys
+- LinkedHashMap: maintains the order in which keys are inserted
