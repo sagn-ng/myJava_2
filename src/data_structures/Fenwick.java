@@ -33,6 +33,13 @@ public class Fenwick {
         return this.trueLength;
     }
 
+    public int getOriginVal(int idx){
+        if (idx<0 || idx>=trueLength){
+            throw new IndexOutOfBoundsException("index "+idx+" out of bound");
+        }
+        return rangeSum(idx, idx);
+    } //get arr[i]
+
     public int prefixSum(int i){
         if (i<0 || i>=trueLength){
             throw new IndexOutOfBoundsException("index "+i+" out of bound");
@@ -72,4 +79,9 @@ public class Fenwick {
         }
     } /*idx is an index of the input array (0-based),
     so we need to add 1 to fit with our fenwick array, which is 1-based*/
+
+    public void set(int idx, int k){
+        int val=rangeSum(idx, idx); //get the value at index "idx" of the input array
+        pointUpdate(idx, k-val); //obviously: val + (k - val) = k
+    }
 }
